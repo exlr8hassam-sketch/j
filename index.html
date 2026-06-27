@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Twinkles by Anjum — Handmade Jewellery & Accessories</title>
+  <meta name="description" content="Handmade beaded bracelets, phone charms, anklets, hair accessories & gift sets. Crafted with love in Multan, Pakistan. Order via Instagram DM @twinklesbyanjum." />
+  <meta name="keywords"    content="handmade jewellery, beaded bracelets, phone charms, anklets, hair accessories, gift sets, Multan, Pakistan, Twinkles by Anjum" />
+  <meta name="author"      content="Misbah Iqbal — Twinkles by Anjum" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Twinkles by Anjum — Handmade Jewellery & Accessories" />
+  <meta property="og:description" content="Handmade with love, one bead at a time. Shop via Instagram DM." />
+  <meta property="og:image"       content="images/logo.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/logo.png" type="image/png" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+    </head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       PAGE LOADER — cute sparkle animation on every page load
+  ══════════════════════════════════════════════════════════════ -->
+  <div class="page-loader" id="pageLoader" role="status" aria-label="Loading Twinkles by Anjum">
+    <div class="loader-inner">
+      <img src="images/logo.png" alt="Twinkles by Anjum" class="loader-logo" />
+      <div class="loader-sparkles" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pink overlay that fades in during page transitions -->
+  <div class="transition-overlay" id="transitionOverlay" aria-hidden="true"></div>
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════════════════════════ -->
+  <header>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+      <div class="nav-inner">
+
+        <!-- Brand Logo -->
+        <a href="index.html" class="nav-logo" aria-label="Twinkles by Anjum — Go to homepage">
+          <img src="images/logo.png" alt="Twinkles by Anjum logo" />
+          <div class="nav-logo-text">
+            Twinkles by Anjum
+            <span>Handmade with Love ✦</span>
+          </div>
+        </a>
+
+        <!-- Desktop links -->
+        <ul class="nav-links" role="list">
+          <li><a href="index.html"   aria-current="page">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="story.html">Our Story</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- Right-side actions -->
+        <div class="nav-actions">
+          <button class="btn-wishlist-nav" id="wishlistBtn" aria-label="View wishlist">
+            💕
+            <span class="wishlist-badge" id="wishlistBadge" aria-live="polite"></span>
+          </button>
+          <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile drawer nav -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop ✨</a>
+    <a href="story.html">Our Story</a>
+    <a href="contact.html">Contact Us</a>
+    <div style="margin-top:28px;">
+      <a href="https://www.instagram.com/twinklesbyanjum" target="_blank" rel="noopener"
+         class="btn-primary" style="display:inline-flex; font-size:0.82rem;">
+        📷 @twinklesbyanjum
+      </a>
+    </div>
+  </nav>
+  <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       HERO SECTION
+  ══════════════════════════════════════════════════════════════ -->
+  <main>
+    <section class="hero" id="hero" aria-labelledby="heroHeading">
+
+      <!-- Animated background elements (pure CSS) -->
+      <div class="hero-bg" aria-hidden="true">
+        <div class="sparkle-orb"></div>
+        <div class="sparkle-orb"></div>
+        <div class="sparkle-orb"></div>
+        <div class="hero-star">✦</div>
+        <div class="hero-star">✦</div>
+        <div class="hero-star">✦</div>
+        <div class="hero-star">✦</div>
+        <div class="hero-star">✦</div>
+      </div>
+
+      <div class="hero-inner">
+
+        <!-- Left: Text -->
+        <div class="hero-content">
+
+          <span class="hero-eyebrow">
+            <span aria-hidden="true">✦</span> Handmade in Multan, Pakistan
+          </span>
+
+          <h1 id="heroHeading">
+            Where Every <em>Bead</em><br />Tells a Story
+          </h1>
+
+          <p>
+            Handcrafted jewellery &amp; accessories made with love,
+            care, and the prettiest beads. Each piece is one-of-a-kind,
+            just like you. 💕
+          </p>
+
+          <div class="hero-cta">
+            <a href="shop.html" class="btn-primary" id="heroCTAShop">
+              Explore the Shop ✨
+            </a>
+            <a href="story.html" class="btn-secondary" id="heroCTAStory">
+              Our Story
+            </a>
+          </div>
+
+          <!-- USP badges -->
+          <div class="hero-badge-strip">
+            <div class="hero-badge">
+              <span class="badge-icon" aria-hidden="true">💕</span>
+              Handmade Items
+            </div>
+            <div class="hero-badge">
+              <span class="badge-icon" aria-hidden="true">✨</span>
+              Advance Payment
+            </div>
+            <div class="hero-badge">
+              <span class="badge-icon" aria-hidden="true">📍</span>
+              Based in Multan, PK
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Morphing blob decoration -->
+        <div class="hero-decoration" aria-hidden="true">
+          <div class="hero-blob-wrap">
+            <div class="hero-blob">
+              <div class="blob-text">
+                <span class="big-emoji">📿</span>
+                <p>"Crafted with love,<br />one bead at a time"</p>
+              </div>
+            </div>
+            <!-- Floating bead orbs -->
+            <div class="bead bead-1"></div>
+            <div class="bead bead-2"></div>
+            <div class="bead bead-3"></div>
+            <div class="bead bead-4"></div>
+            <div class="bead bead-5"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════
+         FEATURES STRIP
+    ══════════════════════════════════════════════════════════════ -->
+    <section class="features-strip" aria-label="Brand highlights">
+      <div class="features-inner">
+        <div class="feature-item reveal">
+          <span class="feature-icon" aria-hidden="true">💕</span>
+          <h4>Handmade with Love</h4>
+          <p>Every piece crafted by hand with care &amp; attention</p>
+        </div>
+        <div class="feature-item reveal reveal-delay-1">
+          <span class="feature-icon" aria-hidden="true">🔒</span>
+          <h4>Advance Payment Only</h4>
+          <p>Secure your order via DM before we begin</p>
+        </div>
+        <div class="feature-item reveal reveal-delay-2">
+          <span class="feature-icon" aria-hidden="true">📍</span>
+          <h4>Based in Multan, PK</h4>
+          <p>Shipping across Pakistan with love</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SHOP BY CATEGORY
+    ══════════════════════════════════════════════════════════════ -->
+    <section class="section" aria-labelledby="categoriesHeading">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <span class="eyebrow">✦ Browse by Category ✦</span>
+          <h2 id="categoriesHeading">Shop Our Collections</h2>
+          <p>From delicate bracelets to cute phone charms — find your perfect piece.</p>
+        </div>
+
+        <div class="categories-grid">
+          <a href="shop.html?cat=bracelets" class="category-card reveal" id="catBracelets">
+            <span class="category-emoji" aria-hidden="true">📿</span>
+            <h4>Beaded Bracelets</h4>
+            <p>7 designs</p>
+          </a>
+          <a href="shop.html?cat=charms" class="category-card reveal reveal-delay-1" id="catCharms">
+            <span class="category-emoji" aria-hidden="true">📱</span>
+            <h4>Phone Charms</h4>
+            <p>7 designs</p>
+          </a>
+          <a href="shop.html?cat=hair" class="category-card reveal reveal-delay-2" id="catHair">
+            <span class="category-emoji" aria-hidden="true">🎀</span>
+            <h4>Hair Accessories</h4>
+            <p>7 designs</p>
+          </a>
+          <a href="shop.html?cat=anklets" class="category-card reveal reveal-delay-3" id="catAnklets">
+            <span class="category-emoji" aria-hidden="true">✦</span>
+            <h4>Anklets</h4>
+            <p>7 designs</p>
+          </a>
+          <a href="shop.html?cat=gifts" class="category-card reveal reveal-delay-4" id="catGifts">
+            <span class="category-emoji" aria-hidden="true">🎁</span>
+            <h4>Gift Sets</h4>
+            <p>7 designs</p>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════
+         FEATURED PRODUCTS (6 — one per category + 1 extra)
+         Rendered by inline JS below using products.js data.
+    ══════════════════════════════════════════════════════════════ -->
+    <section class="section" style="background:var(--clr-white); padding-top:0;" aria-labelledby="featuredHeading">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <span class="eyebrow">✦ Handpicked for You ✦</span>
+          <h2 id="featuredHeading">New Arrivals ✨</h2>
+          <p>Our latest handcrafted pieces, made with extra love.</p>
+        </div>
+
+        <!-- Filled by JS below -->
+        <div class="products-grid" id="featuredGrid" aria-label="Featured products"></div>
+
+        <div style="text-align:center; margin-top:48px;" class="reveal">
+          <a href="shop.html" class="btn-primary" id="viewAllBtn">View All Items ✨</a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════
+         INSTAGRAM CTA
+    ══════════════════════════════════════════════════════════════ -->
+    <section class="section" aria-labelledby="instaHeading">
+      <div class="container">
+        <div class="instagram-cta reveal">
+          <h2 id="instaHeading">Find Us on Instagram 📷</h2>
+          <p>
+            Follow <strong>@twinklesbyanjum</strong> for new drops,
+            behind-the-scenes, and to place your order via DM.
+            9,500+ happy customers can't be wrong! 💕
+          </p>
+          <a
+            href="https://www.instagram.com/twinklesbyanjum"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-instagram"
+            id="instagramCTA"
+          >
+            <span aria-hidden="true">📷</span> @twinklesbyanjum
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <img src="images/logo.png" alt="Twinkles by Anjum" />
+          <div class="nav-logo-text">
+            Twinkles by Anjum
+            <span>Handmade with Love ✦</span>
+          </div>
+        </a>
+        <p>Handmade jewellery &amp; accessories crafted with love, one bead at a time. Based in Multan, Pakistan. 💕</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/twinklesbyanjum" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">📷</a>
+          <a href="https://youtube.com/@sheikhmishoo"         target="_blank" rel="noopener" class="social-link" aria-label="YouTube">▶️</a>
+          <a href="contact.html" class="social-link" aria-label="Contact">💌</a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="story.html">Our Story</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#" aria-label="Checkout — coming soon">Checkout (Coming Soon)</a></li>
+        </ul>
+      </div>
+
+      <!-- Categories -->
+      <div class="footer-col">
+        <h5>Categories</h5>
+        <ul>
+          <li><a href="shop.html?cat=bracelets">Beaded Bracelets</a></li>
+          <li><a href="shop.html?cat=charms">Phone Charms</a></li>
+          <li><a href="shop.html?cat=hair">Hair Accessories</a></li>
+          <li><a href="shop.html?cat=anklets">Anklets</a></li>
+          <li><a href="shop.html?cat=gifts">Gift Sets</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col">
+        <h5>Get in Touch</h5>
+        <ul>
+          <li><a href="https://www.instagram.com/twinklesbyanjum" target="_blank" rel="noopener">📷 @twinklesbyanjum</a></li>
+          <li><a href="contact.html">💌 Send a Message</a></li>
+          <li><a href="#">📍 Multan, Pakistan</a></li>
+          <li><a href="https://youtube.com/@sheikhmishoo" target="_blank" rel="noopener">▶️ YouTube</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Twinkles by Anjum. Made with <span class="heart">❤️</span> in Multan, Pakistan.</p>
+      <p>All orders via Instagram DM &middot; Advance Payment Only</p>
+    </div>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SCRIPTS
+       Load order: products → main → (page-specific inline)
+  ══════════════════════════════════════════════════════════════ -->
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    /* ── HOME PAGE: Render 6 featured product cards ─────────────
+       Picks 1 representative from each category + 1 extra.
+       Uses the same card template as shop.js (but inline here
+       so shop.js is not a dependency of the home page).
+    ────────────────────────────────────────────────────────── */
+    window.renderFeatured = function() {
+      const grid = document.getElementById('featuredGrid');
+      if (!grid || !window.PRODUCTS) return;
+
+      /* IDs: first bracelet, charm, hair, anklet, gift, + extra bracelet */
+      const featuredIds = [1, 8, 15, 22, 29, 3];
+
+      const PLACEHOLDER = {
+        bracelets: { cls: 'placeholder-bracelets', emoji: '📿' },
+        charms:    { cls: 'placeholder-charms',    emoji: '📱' },
+        hair:      { cls: 'placeholder-hair',      emoji: '🎀' },
+        anklets:   { cls: 'placeholder-anklets',   emoji: '✦'  },
+        gifts:     { cls: 'placeholder-gifts',     emoji: '🎁' },
+      };
+
+      const products = featuredIds
+        .map(id => window.PRODUCTS.find(p => p.id === id))
+        .filter(Boolean);
+
+      grid.innerHTML = products.map(p => {
+        const cfg        = PLACEHOLDER[p.category];
+        const wishlisted = window.Wishlist?.isWishlisted(p.id) ?? false;
+        return `
+          <article class="product-card reveal" data-product-id="${p.id}">
+            <div class="product-image-wrap">
+              <div class="product-img-placeholder ${cfg.cls}" aria-label="${p.name} — photo coming soon">
+                <span class="placeholder-icon" aria-hidden="true">${cfg.emoji}</span>
+                <span class="placeholder-text">Photo Coming Soon</span>
+              </div>
+              <button
+                class="btn-card-wishlist ${wishlisted ? 'wishlisted' : ''}"
+                data-id="${p.id}"
+                aria-label="${wishlisted ? 'Remove from wishlist' : 'Add to wishlist'}: ${p.name}"
+              >${wishlisted ? '❤️' : '💕'}</button>
+            </div>
+            <div class="price-stamp">
+              <div class="stamp-inner">
+                <span class="stamp-currency">Rs.</span>
+                <span class="stamp-amount">${p.price.toLocaleString()}</span>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">${p.name}</h3>
+              <p class="product-category-tag">${p.category.charAt(0).toUpperCase() + p.category.slice(1)}</p>
+              <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 14px;">
+                <button
+                  type="button"
+                  class="btn-add-to-bag btn-order"
+                  data-id="${p.id}"
+                  aria-label="Add ${p.name} to Shopping Bag"
+                  style="margin-top:0;"
+                >Add to Bag 🛍️</button>
+                <a
+                  href="https://www.instagram.com/twinklesbyanjum"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-order btn-secondary-order"
+                  aria-label="Order ${p.name} via Instagram DM"
+                  style="margin-top:0; text-align:center; justify-content:center;"
+                >Direct DM 💬</a>
+              </div>
+            </div>
+          </article>
+        `;
+      }).join('');
+
+      /* Wishlist listeners for featured cards */
+      grid.querySelectorAll('.btn-card-wishlist').forEach(btn => {
+        btn.addEventListener('click', e => {
+          e.stopPropagation();
+          const id    = parseInt(btn.dataset.id, 10);
+          const added = window.Wishlist?.toggle(id);
+          btn.textContent = added ? '❤️' : '💕';
+          btn.classList.toggle('wishlisted', !!added);
+          btn.style.transform = 'scale(1.4)';
+          setTimeout(() => { btn.style.transform = ''; }, 210);
+        });
+      });
+
+      /* Cart listeners for featured cards */
+      grid.querySelectorAll('.btn-add-to-bag').forEach(btn => {
+        btn.addEventListener('click', e => {
+          e.stopPropagation();
+          const id = parseInt(btn.dataset.id, 10);
+          window.Cart?.add(id);
+        });
+      });
+
+      /* Scroll-reveal for featured cards */
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(en => {
+          if (en.isIntersecting) { en.target.classList.add('visible'); io.unobserve(en.target); }
+        });
+      }, { threshold: 0.1 });
+      grid.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    };
+    
+    // Call it immediately using static fallback products
+    window.renderFeatured();
+  </script>
+
+</body>
+</html>

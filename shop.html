@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Shop — Twinkles by Anjum</title>
+  <meta name="description" content="Browse Twinkles by Anjum's full handmade collection: beaded bracelets, phone charms, hair accessories, anklets and gift sets. Order via Instagram DM." />
+  <meta name="keywords"    content="shop handmade jewellery, beaded bracelets Pakistan, phone charms, anklets, hair accessories, gift sets" />
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="Shop — Twinkles by Anjum" />
+  <meta property="og:description" content="35 handmade pieces across 5 categories. Order via @twinklesbyanjum on Instagram." />
+  <meta property="og:image"       content="images/logo.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/logo.png" type="image/png" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+    </head>
+<body>
+
+  <!-- PAGE LOADER -->
+  <div class="page-loader" id="pageLoader" role="status" aria-label="Loading">
+    <div class="loader-inner">
+      <img src="images/logo.png" alt="Twinkles by Anjum" class="loader-logo" />
+      <div class="loader-sparkles" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="transition-overlay" id="transitionOverlay" aria-hidden="true"></div>
+
+
+  <!-- NAVIGATION -->
+  <header>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+      <div class="nav-inner">
+
+        <a href="index.html" class="nav-logo" aria-label="Twinkles by Anjum — Home">
+          <img src="images/logo.png" alt="Twinkles by Anjum logo" />
+          <div class="nav-logo-text">
+            Twinkles by Anjum
+            <span>Handmade with Love ✦</span>
+          </div>
+        </a>
+
+        <ul class="nav-links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html" aria-current="page">Shop</a></li>
+          <li><a href="story.html">Our Story</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="btn-wishlist-nav" id="wishlistBtn" aria-label="View wishlist">
+            💕
+            <span class="wishlist-badge" id="wishlistBadge" aria-live="polite"></span>
+          </button>
+          <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile drawer -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop ✨</a>
+    <a href="story.html">Our Story</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+  <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SHOP PAGE HERO BANNER
+  ══════════════════════════════════════════════════════════════ -->
+  <div class="page-hero" aria-labelledby="shopPageTitle">
+    <div class="container">
+      <span class="eyebrow">✦ 35 Handmade Pieces ✦</span>
+      <h1 id="shopPageTitle">Our Handmade Shop</h1>
+      <p>Every item crafted with love &amp; care. Order via Instagram DM. Advance payment required. 💕</p>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       MAIN SHOP: Sidebar + Product Grid
+  ══════════════════════════════════════════════════════════════ -->
+  <main>
+    <section class="section" style="padding-top: var(--space-xl);" aria-label="Shop">
+      <div class="container">
+        <div class="shop-layout">
+
+          <!-- ── SIDEBAR ──────────────────────────────────────── -->
+          <aside class="shop-sidebar" aria-label="Shop filters and search">
+
+            <!-- Search -->
+            <div class="sidebar-section">
+              <h2 class="sidebar-title">🔍 Search</h2>
+              <div class="sidebar-search">
+                <span class="search-icon" aria-hidden="true">🔍</span>
+                <input
+                  type="search"
+                  id="shopSearch"
+                  placeholder="Search items..."
+                  aria-label="Search products"
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+
+            <!-- Category filters — populated by shop.js -->
+            <div class="sidebar-section">
+              <h2 class="sidebar-title">✦ Categories</h2>
+              <div
+                class="category-filters"
+                id="categoryFilters"
+                role="group"
+                aria-label="Filter by category"
+              >
+                <!-- shop.js injects filter pills here -->
+              </div>
+            </div>
+
+            <!-- How to order info -->
+            <div class="sidebar-section">
+              <h2 class="sidebar-title">💌 How to Order</h2>
+              <p style="font-size:0.82rem; line-height:1.75; color:var(--clr-text-muted);">
+                See something you love?<br />
+                Slide into our DMs at
+                <a
+                  href="https://www.instagram.com/twinklesbyanjum"
+                  target="_blank"
+                  rel="noopener"
+                  style="color:var(--clr-pink-500); font-weight:700;"
+                >@twinklesbyanjum</a>
+                to place your order. Advance payment is required to begin crafting. 🎀
+              </p>
+            </div>
+
+          </aside>
+          <!-- ── END SIDEBAR ──────────────────────────────────── -->
+
+
+          <!-- ── PRODUCT MAIN AREA ────────────────────────────── -->
+          <div class="shop-main">
+
+            <!-- Topbar: result count + sort dropdown -->
+            <div class="shop-topbar" aria-label="Shop controls">
+              <p class="results-count" id="resultsCount" aria-live="polite">
+                Showing <span>35</span> items
+              </p>
+              <div class="sort-select-wrap">
+                <label class="sort-label" for="sortSelect">Sort by:</label>
+                <select class="sort-select" id="sortSelect" aria-label="Sort products">
+                  <option value="default">Default</option>
+                  <option value="price-asc">Price: Low → High</option>
+                  <option value="price-desc">Price: High → Low</option>
+                  <option value="name-asc">Name: A → Z</option>
+                  <option value="name-desc">Name: Z → A</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Product grid — filled by shop.js -->
+            <div class="products-grid" id="productsGrid" aria-label="Products">
+              <!-- shop.js renders all cards here -->
+            </div>
+
+          </div>
+          <!-- ── END PRODUCT MAIN ─────────────────────────────── -->
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Instagram CTA -->
+    <section class="section" style="padding-top:0;" aria-labelledby="shopInstaHeading">
+      <div class="container">
+        <div class="instagram-cta reveal">
+          <h2 id="shopInstaHeading">Ready to Order? 💕</h2>
+          <p>
+            All orders are placed through Instagram DM.
+            Advance payment required. We ship across Pakistan!
+          </p>
+          <a
+            href="https://www.instagram.com/twinklesbyanjum"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-instagram"
+            id="shopInstagramCTA"
+          >
+            <span aria-hidden="true">📷</span> Send us a DM
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <img src="images/logo.png" alt="Twinkles by Anjum" />
+          <div class="nav-logo-text">
+            Twinkles by Anjum
+            <span>Handmade with Love ✦</span>
+          </div>
+        </a>
+        <p>Handmade jewellery &amp; accessories crafted with love. Based in Multan, Pakistan. 💕</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/twinklesbyanjum" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">📷</a>
+          <a href="https://youtube.com/@sheikhmishoo"         target="_blank" rel="noopener" class="social-link" aria-label="YouTube">▶️</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="story.html">Our Story</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Categories</h5>
+        <ul>
+          <li><a href="shop.html?cat=bracelets">Beaded Bracelets</a></li>
+          <li><a href="shop.html?cat=charms">Phone Charms</a></li>
+          <li><a href="shop.html?cat=hair">Hair Accessories</a></li>
+          <li><a href="shop.html?cat=anklets">Anklets</a></li>
+          <li><a href="shop.html?cat=gifts">Gift Sets</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Get in Touch</h5>
+        <ul>
+          <li><a href="https://www.instagram.com/twinklesbyanjum" target="_blank" rel="noopener">📷 @twinklesbyanjum</a></li>
+          <li><a href="contact.html">💌 Send a Message</a></li>
+          <li><a href="#">📍 Multan, Pakistan</a></li>
+          <li><a href="https://youtube.com/@sheikhmishoo" target="_blank" rel="noopener">▶️ YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Twinkles by Anjum. Made with <span class="heart">❤️</span> in Multan, Pakistan.</p>
+      <p>All orders via Instagram DM &middot; Advance Payment Only</p>
+    </div>
+  </footer>
+
+
+  <!-- SCRIPTS: products → main → shop -->
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/shop.js"></script>
+
+</body>
+</html>

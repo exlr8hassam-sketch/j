@@ -1,0 +1,10 @@
+Place your logo file here as: logo.png
+
+This folder is referenced by all 4 HTML pages for:
+  - Navbar logo
+  - Page loader logo
+  - Footer logo
+  - Browser favicon
+
+Simply save your "Twinkles by Anjum" logo image as:
+  images/logo.png
